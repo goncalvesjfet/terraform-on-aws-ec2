@@ -1,4 +1,4 @@
-/*
+
 # Terraform AWS RDS Database Variables
 # Place holder file for AWS RDS Database
 
@@ -23,6 +23,3 @@ variable "db_password" {
   type        = string
   sensitive   = true
 }
-
-
-*/

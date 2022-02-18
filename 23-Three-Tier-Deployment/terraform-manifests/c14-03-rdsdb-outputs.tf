@@ -1,4 +1,4 @@
-/*
+
 # RDS DB Outputs
 output "db_instance_address" {
   description = "The address of the RDS instance"
@@ -87,4 +87,3 @@ output "db_enhanced_monitoring_iam_role_arn" {
   description = "The Amazon Resource Name (ARN) specifying the monitoring role"
   value       = module.rdsdb.enhanced_monitoring_iam_role_arn
 }
-*/

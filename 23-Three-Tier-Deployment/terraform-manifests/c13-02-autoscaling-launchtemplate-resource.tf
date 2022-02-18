@@ -25,7 +25,7 @@ resource "aws_launch_template" "my_launch_template" {
   monitoring {
     enabled = true
   }
-  */   
+  */
   tag_specifications {
     resource_type = "instance"
     tags = {

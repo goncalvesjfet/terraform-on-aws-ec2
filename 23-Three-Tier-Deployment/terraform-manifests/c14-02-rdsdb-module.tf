@@ -1,4 +1,4 @@
-/*
+
 # Create AWS RDS Database
 module "rdsdb" {
   source  = "terraform-aws-modules/rds/aws"
@@ -24,8 +24,8 @@ module "rdsdb" {
   major_engine_version = "8.0"      # DB option group
   instance_class       = "db.t2.micro"
 
-  allocated_storage     = 20
-  max_allocated_storage = 21
+  allocated_storage     = 15
+  max_allocated_storage = 20
   storage_encrypted     = false
 
 
@@ -38,9 +38,9 @@ module "rdsdb" {
   deletion_protection     = false
 
   performance_insights_enabled          = false
-  performance_insights_retention_period = 7
+  #performance_insights_retention_period = 7
   #create_monitoring_role                = true
-  monitoring_interval                   = 60
+  #monitoring_interval                   = 60
 
   parameters = [
     {
@@ -67,4 +67,3 @@ module "rdsdb" {
     "Sensitive" = "high"
   }
 }
-*/
