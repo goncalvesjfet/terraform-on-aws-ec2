@@ -11,11 +11,15 @@ data "aws_ami" "amzlinux2" {
     values = ["ebs"]
   }
   filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-  filter {
     name   = "architecture"
     values = ["x86_64"]
+  }
+  filter {
+    name   = "image_type"
+    values = ["machine"]
+  }
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
   }
 }

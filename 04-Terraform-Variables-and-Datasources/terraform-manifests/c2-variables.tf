@@ -3,7 +3,7 @@
 variable "aws_region" {
   description = "Region in which AWS Resources to be created"
   type = string
-  default = "us-east-1"
+  default = "us-east-2"
 }
 
 # AWS EC2 Instance Type
@@ -20,4 +20,11 @@ variable "instance_keypair" {
   default = "terraform-key"
 }
 
-
+/*
+#AWS REGION 
+variable "region" {
+  description = "region"
+  type = string
+  default = "us-east-2"
+}
+*/
